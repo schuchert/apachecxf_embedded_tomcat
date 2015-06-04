@@ -11,6 +11,7 @@
         <jackson.version>1.8.6</jackson.version>
         <tomcat.version>7.0.62</tomcat.version>
         <spring.version>4.1.1.RELEASE</spring.version>
+        <cucumberjvm.version>1.2.2</cucumberjvm.version>
     </properties>
     <dependencies>
         <dependency>
@@ -77,6 +78,18 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumberjvm.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumberjvm.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
